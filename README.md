@@ -1,2 +1,0 @@
-# bickcraft
-projeto origamid
