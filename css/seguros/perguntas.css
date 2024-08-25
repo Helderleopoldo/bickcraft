@@ -1,0 +1,72 @@
+.perguntas {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.perguntas h2 {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.perguntas h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.perguntas h3::before {
+    display: inline-block;
+    content: "";
+    height: 8px;
+    width: 12px;
+    background-color: var(--ama-1);
+}
+
+.seta {
+    position: absolute;
+    top: 32px;
+    right: 40px;
+}
+
+.perguntas li+li .seta img {
+    transform: rotate(180deg);
+}
+
+.perguntas p {
+    max-width: 48ch;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+.perguntas li {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.perguntas li:nth-child(odd) {
+    background-color: var(--cor-2);
+}
+
+@media(max-width:550px) {
+    .perguntas {
+        padding-bottom: 60px;
+    }
+
+    .perguntas h3 {
+        display: block;
+        padding-left: 24px;
+        max-width: 20ch;
+        font-size: 1.25rem;
+    }
+
+    .perguntas h2 {
+        margin-bottom: 32px;
+    }
+
+    .seta {
+        top: 32px;
+        right: 12px;
+    }
+}
